@@ -104,7 +104,7 @@ class Ui_MainWindow(object):
                 years = Tyear - Byear
                 if Bdate > Tdate:
                     months = Tmonth - Bmonth - 1
-                    days = numberOfDays(Tyear, Tmonth) - Bdate + Tdate
+                    days = numberOfDays(Tyear, Tmonth-1) - Bdate + Tdate
                 else:
                     months = Tmonth - Bmonth
                     days = Tdate - Bdate
